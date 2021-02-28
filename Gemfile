@@ -30,7 +30,6 @@ gem "bootsnap", ">= 1.4.2", require: false
 
 gem "active_model_serializers", "~> 0.10.0" # 追加
 gem "devise_token_auth" # 追加
-gem 'annotate'
 
 group :development, :test do
   # gem "devise_token_auth"
