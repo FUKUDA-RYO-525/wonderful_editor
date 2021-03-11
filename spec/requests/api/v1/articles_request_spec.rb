@@ -1,23 +1,23 @@
-require "rails_helper"
+# require "rails_helper"
 
-RSpec.describe "Api::V1::Articles", type: :request do
-  # 中略
+# RSpec.describe "Api::V1::Articles", type: :request do
+#   # 中略
 
-  describe "POST /articles" do
-    subject { post(api_v1_articles_path, params: params) }
+#   describe "POST /articles" do
+#     subject { post(api_v1_articles_path, params: params) }
 
-    let(:params) { { article: attributes_for(:article) } }
-    let(:current_user) { create(:user) }
+#     let(:params) { { article: attributes_for(:article) } }
+#     let(:current_user) { create(:user) }
 
-    # stub
-    # before { allow_any_instance_of(Api::V1::BaseApiController).to receive(:current_user).and_return(current_user) }
+#     # stub
+#     # before { allow_any_instance_of(Api::V1::BaseApiController).to receive(:current_user).and_return(current_user) }
 
-    it "記事のレコードが作成できる" do
-      #   expect { subject }.to change { Article.where(user_id: current_user.id).count }.by(1)
-      #   res = JSON.parse(response.body)
-      #   expect(res["title"]).to eq params[:article][:title]
-      #   expect(res["body"]).to eq params[:article][:body]
-      #   expect(response).to have_http_status(:ok)
-    end
-  end
-end
+#     it "記事のレコードが作成できる" do
+#       #   expect { subject }.to change { Article.where(user_id: current_user.id).count }.by(1)
+#       #   res = JSON.parse(response.body)
+#       #   expect(res["title"]).to eq params[:article][:title]
+#       #   expect(res["body"]).to eq params[:article][:body]
+#       #   expect(response).to have_http_status(:ok)
+#     end
+#   end
+# end
