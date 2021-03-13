@@ -256,7 +256,7 @@ Style/FrozenStringLiteralComment:
 #       の影響で、if 文の中身が 1 行の場合に警告されるようになっている。
 #       Style/IfUnlessModifier の設定見てくれないかなぁ？ (v0.36.0)
 Style/GuardClause:
-  MinBodyLength: 5
+  MinBodyLength: 10
 
 # rake タスクの順序の hash は rocket を許可する
 Style/HashSyntax:

@@ -10,17 +10,14 @@ RSpec.describe "Api::V1::Articles", type: :request do
 
       it "任意の記事の値が取得できる" do
         subject
-        #  binding.pry
-        # res =
-        JSON.parse(response.body)
-
+        res = JSON.parse(response.body)
         expect(response).to have_http_status(:ok)
-        # expect(res["id"]).to eq article.id
-        # expect(res["title"]).to eq article.title
-        # expect(res["body"]).to eq article.body
-        # expect(res["user"]["id"]).to eq article.user.id
-        # expect(res["user"].keys).to eq ["id", "name", "email"]
-        # expect(res["updated_at"]).to be_present
+        expect(res["id"]).to eq article.id
+        expect(res["title"]).to eq article.title
+        expect(res["body"]).to eq article.body
+        expect(res["user"]["id"]).to eq article.user.id
+        expect(res["user"].keys).to eq ["id", "name", "email"]
+        expect(res["updated_at"]).to be_present
       end
     end
 
