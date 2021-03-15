@@ -27,6 +27,13 @@ module Api::V1
       render json: article, serializer: Api::V1::ArticleSerializer
     end
 
+    def destroy
+      # 対象のレコードを探す
+      article = current_user.articles.find(params[:id])
+      # 探してきたレコードを削除する
+      article.destroy!
+    end
+
     private
 
       def article_params
