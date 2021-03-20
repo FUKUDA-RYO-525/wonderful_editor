@@ -9,7 +9,6 @@ RSpec.describe "Api::V1::Articles", type: :request do
     let(:params) { { article: attributes_for(:article) } }
     let(:current_user) { create(:user) }
 
-    # stub
     # before { allow_any_instance_of(Api::V1::BaseApiController).to receive(:current_user).and_return(current_user) }
 
     it "記事のレコードが作成できる" do
