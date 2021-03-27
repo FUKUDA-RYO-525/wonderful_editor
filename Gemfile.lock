@@ -292,7 +292,7 @@ DEPENDENCIES
   pry-doc
   pry-rails
   puma (~> 4.1)
-  rails (~> 6.0.3, >= 6.0.3.4)
+  rails (~> 6.0.3, >= 6.0.3.2)
   rails-erd
   rspec-rails
   rubocop-rails
